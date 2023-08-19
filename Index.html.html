@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment form</title>
+    <script>
+        var a = confirm('Are you 18+');
+        if(a){
+            alert('Thanx for like this website');
+        }else{
+            alert('It is ok')
+        };
+    </script>
+</head>
+<body>
+    <form action="">
+        <h1>Payment form</h1>
+        <h2>Contact Information</h2>
+        <p>Required Fields are followed by *</p>
+        <p>Name: * <input type="Text" name="name" required></p>        
+        <fieldset>
+            <legend>Gender *</legend>
+        <p>
+            Male <input type="radio" name="gender" required>
+            Female <input type="radio" name="gender" required>
+        </p>
+    </fieldset>
+     <p>Address: * <textarea name="address" id="address" cols="100" rows="8" required></textarea></p>
+     <p>Email: *<input type="email" name="email" id="email" required></p>
+     <p>Pincode: *<input type="number" name="pincode
+        " required></p>
+        <h2>Payment Information</h2>
+        <p>Card type: *
+            <select name="Card_type" id="card_type" required>
+                <option value="">--selct a Card Type--</option>
+                <option value="visa">Visa</option>
+                <option value="easypaisa">Easypaisa</option>
+                <option value="jazzcash">Jazzcash</option>
+            </select>
+        </p>
+        <p>Card Number: * <input type="number" name="Card_number" required></p>
+        <p>
+            Expiration Date: *<input type="date" name="exp_date" required> 
+        </p>
+        <p>CVV * <input type="password" name="cvv"></p>
+        <input type="submit" value="Pay Now" required>
+
+    </form>
+</body>
+</html>
